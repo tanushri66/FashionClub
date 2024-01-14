@@ -1,0 +1,26 @@
+<p>product works!</p>
+
+<div class="container home-container border shadow mt-2 p-2">
+    <p class="fs-6 fw-bold">Total products :{{productCount}}</p>
+
+    <form>
+        <div class="mb-3">
+            <label for="id1" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="id1" name="pname" [(ngModel)]="productObj.productName">
+        </div>
+        <div class="mb-3">
+            <label for="id2" class="form-label">Price</label>
+            <input type="text" class="form-control" id="id2" name="price" [(ngModel)]="productObj.price">
+        </div>
+        <div class="mb-3">
+            <label for="id4" class="form-label">Quantity</label>
+            <input type="text" class="form-control" id="id4" name="quan" [(ngModel)]="productObj.quantity">
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2" (click)="add()">ADD</button>
+
+        <button type="submit" class="btn btn-primary mb-2 ms-2" (click)="reset()">Reset</button>
+
+    </form>
+
+</div>
